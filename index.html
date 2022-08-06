@@ -4,12 +4,33 @@
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
-    <title>Document</title> 
+    <title>Learning HTML</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"/>
+    <style>
+     .rounded-img {
+       width: 60%;
+       border-radius: 50%;
+       box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+       padding: 0.5em;
+       margin-bottom: 1em;
+      } 
+    </style>
   </head> 
   <body>
-    <img src="screen/my_photo.jpeg" width ="100" alt="Dmitry"/>
-    <h1>Dmitry Loskutnikov</h1>
-    <p>Learning HTML. Step by step.</p>
-    <button>Like!</button>
+    <div class="container text-center my-4">
+      <div class="row">
+        <div class="col-lg-6 col-md-8 col-sm-10 mx-auto">
+          <img class="rounded-img" src="screen/avatar.jpeg" width ="400" alt="Dmitry"/>
+          <h1 class="fw-light">Dmitry Loskutnikov</h1>
+          <p class="lead text-muted">Learning HTML. Step by step. Theory and practice.</p>
+          <a href="https://github.com/dmitryloskutnikov" target="_blanc" class="btn btn-primary">
+            My GitHub
+          </a>
+          <a href="https://www.codewars.com/users/dmitryloskutnikov" target="_blanc" class="btn btn-secondary">
+            My CodeWars
+          </a>
+        </div>
+      </div>
+    </div>   
   </body>
 </html>
